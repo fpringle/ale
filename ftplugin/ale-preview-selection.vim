@@ -14,6 +14,8 @@ noremap <buffer> O <NOP>
 " Keybinds for opening selection items.
 noremap <buffer> <CR> :call ale#preview#OpenSelection()<CR>
 noremap <buffer> t :call ale#preview#OpenSelectionInTab()<CR>
+noremap <buffer> s :call ale#preview#OpenSelectionInSplit()<CR>
+noremap <buffer> v :call ale#preview#OpenSelectionInVSplit()<CR>
 
 let b:undo_ftplugin = get(b:, 'undo_ftplugin', 'execute')
 let b:undo_ftplugin .= ' | execute "silent! unmap <buffer> q"'

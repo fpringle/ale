@@ -135,3 +135,11 @@ endfunction
 function! ale#preview#OpenSelectionInTab() abort
     call s:Open('tab')
 endfunction
+
+function! ale#preview#OpenSelectionInSplit() abort
+    call s:Open('split')
+endfunction
+
+function! ale#preview#OpenSelectionInVSplit() abort
+    call s:Open('vsplit')
+endfunction
